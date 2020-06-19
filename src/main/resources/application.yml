@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+---
+spring:
+  profiles: local
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/donkey?characterEncoding=UTF-8&serverTimezone=UTC
+    username: yjkim
+    password: akdrh
+server:
+  port: 8000
+---
+spring:
+  profiles: dev
